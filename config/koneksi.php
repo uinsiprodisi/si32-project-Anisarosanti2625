@@ -1,9 +1,18 @@
 <?php
 
-$nilai = 85;
+$servername = "localhost";
+$database = "uinsi_2441919007";
+$username = "root";
+$password = "";
 
-if($nilai >= 90){
-    echo "Nilai A";
-}
-elseif($nilai >=80)
+// Buat koneksi Database
+
+$conn = mysqli_connect($servername,$username,$password,$database);
+
+// Cek koneksi
+
+ if (!$conn) {
+   die("Koneksi Gagal".mysqli_connect_error());
+ }
+
 ?>
